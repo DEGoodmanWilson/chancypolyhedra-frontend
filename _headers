@@ -3,4 +3,4 @@
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
-  Content-Security-Policy-Report-Only: manifest-src 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_471a939165874097821ca84883243091; worker-src 'self'; frame-src 'self'; media-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'self'; connect-src 'self'; child-src 'self'; font-src 'self'; default-src 'self'; img-src 'self'
+  Content-Security-Policy: worker-src 'self'; connect-src https://*.now.sh 'self'; report-uri https://reports-api.sqreen.io/browser/v0/csp-violations/csp_471a939165874097821ca84883243091; font-src 'self' https://*.gstatic.com; media-src 'self'; object-src 'self'; manifest-src 'self'; default-src 'self'; img-src 'self'; frame-src 'self'; style-src 'unsafe-inline' 'self' https://*.googleapis.com; script-src 'unsafe-inline' 'self' 'unsafe-eval'; child-src 'self'
