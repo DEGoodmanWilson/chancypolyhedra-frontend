@@ -94,6 +94,12 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
+    ]),
+    // copy over the file that Netlify uses to define the headers we want to send.
+    new CopyWebpackPlugin([
+      {
+        from: '_headers',
+      },
     ])
   ]
 })
