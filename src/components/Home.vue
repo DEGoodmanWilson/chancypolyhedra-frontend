@@ -52,7 +52,7 @@
       roll: function (event) {
         const vm = this
         var dice = document.querySelector('#dice')
-        fetch('https://chancypolyhedra.now.sh/v1/' + dice.value).then(function (response) {
+        fetch('https://chancypolyhedra.herokuapp.com/v1/' + dice.value).then(function (response) {
           return response.json()
         }).then(function (data) {
           console.debug(data)
